@@ -1,8 +1,8 @@
 body {
-    background: rgb(254,255,80);
-    background: radial-gradient(circle, rgba(254,255,80,1) 0%, rgba(45,199,253,1) 100%);
+    background: rgb(254, 255, 80);
+    background: radial-gradient(circle, rgba(254, 255, 80, 1) 0%, rgba(45, 199, 253, 1) 100%);
     font-family: 'Space Mono', monospace;
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
 }
 
@@ -30,12 +30,11 @@ h1 {
 }
 
 .center {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: max-content;
+    margin: 0 auto;
 }
 
 .link {
@@ -47,5 +46,12 @@ h1 {
     border: 1px solid rgba(45, 199, 253, 0.41);
     border-radius: 10px;
     background-color: rgba(45, 199, 253, 0.41);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 450px) {
+    p {
+        width: 300px;
+        text-align: center;
+    }
 }
