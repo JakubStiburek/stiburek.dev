@@ -45,6 +45,7 @@ h1 {
 }
 .greeting {
     padding-bottom: 1rem;
+    text-align: center;
 }
 .medallion {
     padding-top: 1rem;
@@ -64,8 +65,13 @@ h1 {
     p {
         width: 300px;
     }
+}
 
-    greeting {
-        text-align: center;
-    }
+.profile {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    opacity: 0.85;
 }
