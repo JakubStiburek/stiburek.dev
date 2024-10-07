@@ -3,9 +3,11 @@
     --light: #f4f6fc;
 }
 
-body {
+html {
     background: var(--dark);
-    background: radial-gradient(circle, var(--dark) 30%, var(--light) 100%);
+}
+
+body {
     font-family: 'Space Mono', monospace;
     margin: 0 auto;
     height: 100vh;
@@ -70,6 +72,7 @@ footer {
 .intro-section {
     width: calc(600px + 1rem);
 }
+
 .intro-section p {
     margin: 0;
     padding: 0;
@@ -139,6 +142,12 @@ footer {
     width: 300px;
 }
 
+@media screen and (min-width: 671px) {
+    html {
+        background: radial-gradient(circle, var(--dark) 30%, var(--light) 100%);
+    }
+}
+
 @media screen and (max-width: 670px) {
     .case-study-list {
         flex-direction: column;
@@ -147,7 +156,7 @@ footer {
     h1 {
         font-size: xx-large;
         padding: 0;
-        color: var(--dark);
+        color: var(--light);
         margin: auto;
         width: max-content;
     }
@@ -177,11 +186,15 @@ footer {
     }
 
     body {
-        color: var(--dark);
+        color: var(--light);
     }
 
     a {
-        color: var(--dark);
+        color: var(--light);
+    }
+
+    .case-study-thumbnail img {
+        border: 1px solid var(--light);
     }
 }
 
