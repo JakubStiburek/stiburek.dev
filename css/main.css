@@ -4,14 +4,14 @@
 }
 
 html {
-    background: var(--dark);
+    background: var(--light);
 }
 
 body {
     font-family: 'Space Mono', monospace;
     margin: 0 auto;
     height: 100vh;
-    color: var(--light);
+    color: var(--dark);
 }
 
 ul {
@@ -25,7 +25,7 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--light);
+    color: var(--dark);
 }
 
 a:hover {
@@ -144,7 +144,7 @@ footer {
 
 @media screen and (min-width: 671px) {
     html {
-        background: radial-gradient(circle, var(--dark) 30%, var(--light) 100%);
+        background: linear-gradient(0deg, var(--dark) 0%, var(--light) 90%, var(--light) 100%)
     }
 }
 
@@ -156,7 +156,6 @@ footer {
     h1 {
         font-size: xx-large;
         padding: 0;
-        color: var(--light);
         margin: auto;
         width: max-content;
     }
@@ -185,17 +184,6 @@ footer {
         flex-direction: column;
     }
 
-    body {
-        color: var(--light);
-    }
-
-    a {
-        color: var(--light);
-    }
-
-    .case-study-thumbnail img {
-        border: 1px solid var(--light);
-    }
 }
 
 @media screen and (max-width: 550px) {
@@ -206,5 +194,15 @@ footer {
 
     footer {
         padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-height: 1300px) {
+    a {
+        color: var(--light);
+    }
+
+    .who-am-i-section {
+        color: var(--light);
     }
 }
