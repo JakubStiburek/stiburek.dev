@@ -197,7 +197,7 @@ footer {
     }
 }
 
-@media screen and (max-height: 1300px) {
+@media screen and (max-height: 1300px) and (min-width: 671px) {
     a {
         color: var(--light);
     }
