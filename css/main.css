@@ -67,7 +67,7 @@ section {
 }
 
 footer {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .intro-section {
@@ -87,6 +87,7 @@ footer {
     align-items: center;
     margin: 0 auto;
     gap: 3rem;
+    width: max-content;
 }
 
 .who-am-i-section {
@@ -160,6 +161,15 @@ footer {
     display: flex;
 }
 
+.blur {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    padding: 1rem;
+}
+
 @media screen and (min-width: 671px) {
     html {
         background: linear-gradient(0deg, var(--dark) 0%, var(--light) 90%, var(--light) 100%)
@@ -167,6 +177,9 @@ footer {
 }
 
 @media screen and (max-width: 670px) {
+    html {
+        font-size: small;
+    }
     .case-study-list {
         flex-direction: column;
     }
@@ -182,14 +195,6 @@ footer {
         font-size: medium;
     }
 
-    h3 {
-        font-size: small;
-    }
-
-    p {
-        font-size: small;
-    }
-
     .intro-section {
         width: 300px;
     }
@@ -200,6 +205,19 @@ footer {
 
     .who-am-i {
         flex-direction: column;
+    }
+
+    .blur {
+        background: inherit;
+        border-radius: 0;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 5rem;
     }
 
 }
