@@ -93,6 +93,9 @@ footer {
 
 .who-am-i-section {
     width: calc(600px + 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile {
@@ -121,6 +124,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: flex-start;
 }
 
 .who-am-i-section p {
@@ -209,9 +213,10 @@ footer {
 
     .who-am-i {
         flex-direction: column;
+        align-items: center;
     }
 
-    .blur {
+    .light-text {
         color: var(--light);
     }
 
