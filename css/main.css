@@ -129,6 +129,10 @@ footer {
     text-align: justify;
 }
 
+.case-studies-section {
+    width: calc(600px + 1rem);
+}
+
 .case-studies-section p {
     width: calc(600px + 1rem);
     padding: 0;
@@ -139,6 +143,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .case-study-thumbnail img {
@@ -188,6 +193,10 @@ footer {
 
     h2 {
         font-size: medium;
+    }
+
+    .case-studies-section {
+      width: 300px;
     }
 
     .intro-section {
