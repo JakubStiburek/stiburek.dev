@@ -99,6 +99,26 @@ footer {
   width: max-content;
 }
 
+.process-automation-workflow {
+  width: calc(600px + 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.process-automation-workflow h3 {
+  text-align: left;
+}
+
+.process-automation-workflow p {
+  text-align: left;
+}
+
+.process-automation-workflow h2 {
+  text-align: center;
+}
+
 .who-am-i-section {
   width: calc(600px + 1rem);
   display: flex;
@@ -221,6 +241,10 @@ footer {
     width: 300px;
   }
 
+  .process-automation-workflow {
+    width: 300px;
+  }
+
   .who-am-i {
     flex-direction: column;
     align-items: center;
@@ -241,11 +265,5 @@ footer {
 
   footer {
     padding-bottom: 1rem;
-  }
-}
-
-@media screen and (max-height: 1300px) and (min-width: 671px) {
-  .who-am-i-section {
-    color: var(--light);
   }
 }
