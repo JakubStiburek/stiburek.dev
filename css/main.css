@@ -254,13 +254,28 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (min-width: 671px) and (max-width: 1050px) {
-  header {
-    flex-direction: column;
+.cite {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 671px) and (max-width: 1230px) {
+  .web-nav {
+    display: none;
   }
 
-  .web-nav {
-    margin: 0;
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-navigation-mobile {
+    width: calc(600px + 1rem);
+    gap: 1rem;
+  }
+
+  .mobile-nav {
+    display: unset;
+    margin-bottom: 2rem;
   }
 }
 
