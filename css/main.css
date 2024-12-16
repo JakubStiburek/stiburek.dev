@@ -276,6 +276,7 @@ footer {
 
   .section-navigation-mobile {
     width: 300px;
+    gap: 1rem;
   }
 
   .mobile-nav {
