@@ -1,305 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/site.webmanifest" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Jakub Stibůrek - automatizace firemních procesů. Software vývoj. Webové aplikace."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Jakub Stibůrek</title>
+  </head>
 
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
-  <link rel="manifest" href="/static/site.webmanifest">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Jakub Stibůrek - automatizace firemních procesů. Software vývoj. Webové aplikace.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Jakub Stibůrek</title>
-</head>
-
-<body>
-  <header id="header">
-    <a href="./index.html">
-      <h1>STIBUREK.DEV</h1>
-    </a>
-    <nav class="web-nav">
-      <ul class="section-navigation">
-        <a href="#automatization-section">
-          <li class="section-navigation-item">Automatizace</li>
-        </a>
-        <a href="#modernization-section">
-          <li class="section-navigation-item">Modernizace</li>
-        </a>
-        <a href="#realization-section">
-          <li class="section-navigation-item">Realizace</li>
-        </a>
-        <a href="#testimonies-section">
-          <li class="section-navigation-item">Reference</li>
-        </a>
-        <a href="#case-studies-section">
-          <li class="section-navigation-item">Studie</li>
-        </a>
-      </ul>
-    </nav>
-    <nav class="mobile-nav">
-      <ul class="section-navigation-mobile">
-        <li><a href="#automatization-section">> Automatizace firemních procesů</a></li>
-        <li><a href="#modernization-section">> Modernizace webových aplikací</a></li>
-        <li><a href="#realization-section">> Realizace softwaru</a></li>
-        <li><a href="#testimonies-section">> Reference od klientů</a></li>
-        <li><a href="#case-studies-section">> Případové studie</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="intro-section blur">
-      <h2>Co pro vás mohu udělat</h2>
-      <p>Pomohu vám vylepšit nedostatky ve vašem současném IT. Analyzuji vaše systémy a aplikace, najdu místa, která vám
-        působí škodu po stránce efektivity, času a peněz. Odstraním je nebo vymyslím lepší řešení vašeho problému.</p>
-    </section>
-    <section class="who-am-i-section blur">
-      <h2>Kdo jsem?</h2>
-      <div class="who-am-i">
-        <div class="profile">
-          <div class="profile-image">
-            <img src="static/profile.jpg" alt="Profile picture">
+  <body>
+    <header id="header">
+      <a href="./index.html">
+        <h1>STIBUREK.DEV</h1>
+      </a>
+      <!-- <nav class="web-nav"> -->
+      <!--   <ul class="section-navigation"> -->
+      <!--     <a href="#automatization-section"> -->
+      <!--       <li class="section-navigation-item">Automatizace</li> -->
+      <!--     </a> -->
+      <!--     <a href="#modernization-section"> -->
+      <!--       <li class="section-navigation-item">Modernizace</li> -->
+      <!--     </a> -->
+      <!--     <a href="#realization-section"> -->
+      <!--       <li class="section-navigation-item">Realizace</li> -->
+      <!--     </a> -->
+      <!--     <a href="#testimonies-section"> -->
+      <!--       <li class="section-navigation-item">Reference</li> -->
+      <!--     </a> -->
+      <!--     <a href="#case-studies-section"> -->
+      <!--       <li class="section-navigation-item">Studie</li> -->
+      <!--     </a> -->
+      <!--   </ul> -->
+      <!-- </nav> -->
+      <!-- <nav class="mobile-nav"> -->
+      <!--   <ul class="section-navigation-mobile"> -->
+      <!--     <li> -->
+      <!--       <a href="#automatization-section" -->
+      <!--         >> Automatizace firemních procesů</a -->
+      <!--       > -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <a href="#modernization-section">> Modernizace webových aplikací</a> -->
+      <!--     </li> -->
+      <!--     <li><a href="#realization-section">> Realizace softwaru</a></li> -->
+      <!--     <li><a href="#testimonies-section">> Reference od klientů</a></li> -->
+      <!--     <li><a href="#case-studies-section">> Případové studie</a></li> -->
+      <!--   </ul> -->
+      <!-- </nav> -->
+    </header>
+    <main>
+      <!-- <section class="intro-section blur"> -->
+      <!--   <h2>Co pro vás mohu udělat</h2> -->
+      <!--   <p> -->
+      <!--     Pomohu vám vylepšit nedostatky ve vašem současném IT. Analyzuji vaše -->
+      <!--     systémy a aplikace, najdu místa, která vám působí škodu po stránce -->
+      <!--     efektivity, času a peněz. Odstraním je nebo vymyslím lepší řešení -->
+      <!--     vašeho problému. -->
+      <!--   </p> -->
+      <!-- </section> -->
+      <section class="who-am-i-section blur">
+        <h2>Kdo jsem?</h2>
+        <div class="who-am-i">
+          <div class="profile">
+            <div class="profile-image">
+              <img src="static/profile.jpg" alt="Profile picture" />
+            </div>
+            <h3>Jakub Stibůrek</h3>
           </div>
-          <h3>Jakub Stibůrek</h3>
-        </div>
-        <p>Jsem vývojář softwaru, programátor a elektrotechnik. Studoval jsem průmyslovou školu v Klatovech.
-          Pracoval
-          jsem na aplikacích pro malé i velké podniky v Česku a zahraničí.</p>
-      </div>
-    </section>
-    <section class="section blur" id="automatization-section">
-      <h2>Jak zautomatizujeme vaše procesy</h2>
-      <ol>
-        <li>
-          <h3>Promluvíme si o vašem podnikání</h3>
-          <p>Nejdříve se v krátkosti poznáme. Povíte mi, jak vaše firma funguje, jak jste na tom s IT a kam směřujete.
+          <p>
+            Jsem vývojář softwaru, programátor a elektrotechnik. Studoval jsem
+            průmyslovou školu v Klatovech. Pracoval jsem na aplikacích pro malé
+            i velké podniky v Česku a zahraničí.
           </p>
-        </li>
-        <li>
-          <h3>Zaměříme se na procesy</h3>
-          <p>Zajímá mě, jestli víte, kde to drhne, nebo máte jen neurčité tušení, že vám někde utíkají peníze. Procesy
-            nebo celé oblasti vašeho podnikání, na které se zaměříme, zmapuji a zdokumentuji.</p>
-        </li>
-        <li>
-          <h3>Zhodnotíme návratnost investice</h3>
-          <p>Nebudeme pokračovat dál, dokud nezjistíme kolik peněz vám kandidátské procesy ztrácí nebo naopak kolik
-            peněz jejich automatizace může přinést.</p>
-        </li>
-        <li>
-          <h3>Určíme si směr</h3>
-          <p>Vzhledem k charakteru projektu vybereme vhodnou strategii a plán její implementace.</p>
-        </li>
-        <li>
-          <h3>Pustíme se do práce</h3>
-          <p>Na základě vybrané strategie dodám řešení ve stanoveném čase.</p>
-        </li>
-        <li>
-          <h3>Automatizace hladce běží</h3>
-          <p>Protože vám poskytnu dlouhodobou podporu a postarám se o jakékoliv úpravy a opravy.</p>
-        </li>
-      </ol>
-    </section>
-    <section class="section blur" id="modernization-section">
-      <h2>Jak zmodernizujeme vaši webovou aplikaci</h2>
-      <ol>
-        <li>
-          <h3>Seznámíte mě s vaším systémem</h3>
-          <p>Potřebuji vědět, co pro vás dělá a co chcete, aby vám přinesl do budoucna. Zároveň si promluvíme o jeho
-            nedostatcích.</p>
-        </li>
-        <li>
-          <h3>Zjistíme zda jsme v technologické shodě</h3>
-          <p>Pokud je váš systém postaven na webových technologiích (JavaScript, TypeScript, Node, Nest, Express, React,
-            Angular,...), mohu pro vás udělat téměř cokoliv.</p>
-        </li>
-        <li>
-          <h3>Určíme cíl</h3>
-          <p>Potřebujete se zbavit chyb nebo udělat malé úpravy? Chcete z prototypu udělat plnohodnotný software? Nebo
-            se pustíme do dlouhodobé spolupráce a dostaneme váš projekt na novou úroveň?</p>
-        </li>
-        <li>
-          <h3>Nastavíme strategii</h3>
-          <p>Vzhledem k vašim požadavkům naplánujeme postup implementace.</p>
-        </li>
-        <li>
-          <h3>Pustíme se do práce</h3>
-          <p>Ať už to bude spolupráce na pár dní nebo měsíce, budeme stále v úzkém kontaktu a na vývoji projektu
-            pracovat společně.</p>
-        </li>
-        <li>
-          <h3>Vaše webová aplikace hladce běží</h3>
-          <p>Pokud jsme se dohodli na dlouhodobé spolupráci, zajistím podporu a údržbu.</p>
-        </li>
-      </ol>
-    </section>
-    <section class="section blur" id="realization-section">
-      <h2>Jak zrealizujeme vaši vizi</h2>
-      <ol>
-        <li>
-          <h3>Povíte mi o své motivaci</h3>
-          <p>Máte problém, který chcete vyřešit pomocí software. O co se jedná a řešíte tento problém už nějak?</p>
-        </li>
-        <li>
-          <h3>Podíváme se na váš ekosystém</h3>
-          <p>Stojí vaše firma na celé škále aplikací a systémů? Nebo začínáme na zelené louce? Jak do toho zapadá vaše
-            vize?</p>
-        </li>
-        <li>
-          <h3>Existuje už řešení</h3>
-          <p>Je docela možné, že pro váš problém již existuje specializovaný software. Pokud ano, zhodnotíme, zda by se
-            spíš nevyplatilo použít hotové tzv. "krabicové" řešení.</p>
-        </li>
-        <li>
-          <h3>Definujeme prototyp</h3>
-          <p>Vývoj softwaru je veliká investice. Je dobré nejdříve vyrobit levný prototyp, díky kterému si potvrdíme
-            nebo vyvrátíme některé předpoklady.</p>
-        </li>
-        <li>
-          <h3>Pustíme se do vývoje</h3>
-          <p>Začínáme od nuly a vyvíjíme tzv. MVP, tedy prvotní verzi produktu, která obsahuje minimální potřebné
-            vlastnosti.</p>
-        </li>
-        <li>
-          <h3>Stavíme úspěšný projekt</h3>
-          <p>Software žije a vydělává tak dlouho, jak dlouho ho vyvíjíme. Vývoj znamená změny. Proto po celou dobu
-            trvání naší spolupráce dodávám kvalitní, udržitelný a moderní kód. Poskytuji podporu a kompletně zajišťuji
-            váš projekt.</p>
-        </li>
-      </ol>
-    </section>
-    <section class="section blur" id="testimonies-section">
-      <h2>Reference</h2>
-      <div>
-        <blockquote cite="https://bntlab.com/">
-          Ve společnosti B&T se zaměřujeme na efektivitu a snažíme se zbavit administrativní zátěže. Automatizace
-          procesů,
-          které Jakub vyvinul, nám pomohly uvolnit čas našich zaměstnanců, který nyní mohou věnovat úkolům s vyšší
-          přidanou hodnotou.
-        </blockquote>
-        <p class="cite">—Jevgenij Blagonravov, Founder & Innovation Director, B&T lab</p>
-      </div>
-      <div>
-        <blockquote cite="https://bntlab.com/">
-          Pracovat s Jakubem na automatizaci interních procesů byla radost! Nejenže jsme vyřešili naše palčivé téma, ale
-          potvrdilo se, že si Jakub umí poradit se vším, co mu přijde pod ruky, vynalézavým, jednoduchým a efektivním
-          způsobem.
-        </blockquote>
-        <p class="cite">—Hana Opatrná, Back Office manažerka, B&T Agency</p>
-      </div>
-    </section>
-    <section class="section" id="case-studies-section">
-      <h2>Případové studie</h2>
-      <div class="case-study-list">
-        <a href="static/bnt_study.pdf">
-          <div class="case-study-thumbnail">
-            <img src="static/bnt_study_thumbnail.jpg" alt="case study thumbnail" />
-            <div class="overlay">
-              <svg viewBox="0 0 24 24" width="300px" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
-                    stroke="var(--light-opaque)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="var(--light-opaque)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>
+        </div>
+      </section>
+      <!-- <section class="section blur" id="automatization-section"> -->
+      <!--   <h2>Jak zautomatizujeme vaše procesy</h2> -->
+      <!--   <ol> -->
+      <!--     <li> -->
+      <!--       <h3>Promluvíme si o vašem podnikání</h3> -->
+      <!--       <p> -->
+      <!--         Nejdříve se v krátkosti poznáme. Povíte mi, jak vaše firma -->
+      <!--         funguje, jak jste na tom s IT a kam směřujete. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Zaměříme se na procesy</h3> -->
+      <!--       <p> -->
+      <!--         Zajímá mě, jestli víte, kde to drhne, nebo máte jen neurčité -->
+      <!--         tušení, že vám někde utíkají peníze. Procesy nebo celé oblasti -->
+      <!--         vašeho podnikání, na které se zaměříme, zmapuji a zdokumentuji. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Zhodnotíme návratnost investice</h3> -->
+      <!--       <p> -->
+      <!--         Nebudeme pokračovat dál, dokud nezjistíme kolik peněz vám -->
+      <!--         kandidátské procesy ztrácí nebo naopak kolik peněz jejich -->
+      <!--         automatizace může přinést. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Určíme si směr</h3> -->
+      <!--       <p> -->
+      <!--         Vzhledem k charakteru projektu vybereme vhodnou strategii a plán -->
+      <!--         její implementace. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Pustíme se do práce</h3> -->
+      <!--       <p>Na základě vybrané strategie dodám řešení ve stanoveném čase.</p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Automatizace hladce běží</h3> -->
+      <!--       <p> -->
+      <!--         Protože vám poskytnu dlouhodobou podporu a postarám se o jakékoliv -->
+      <!--         úpravy a opravy. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--   </ol> -->
+      <!-- </section> -->
+      <!-- <section class="section blur" id="modernization-section"> -->
+      <!--   <h2>Jak zmodernizujeme vaši webovou aplikaci</h2> -->
+      <!--   <ol> -->
+      <!--     <li> -->
+      <!--       <h3>Seznámíte mě s vaším systémem</h3> -->
+      <!--       <p> -->
+      <!--         Potřebuji vědět, co pro vás dělá a co chcete, aby vám přinesl do -->
+      <!--         budoucna. Zároveň si promluvíme o jeho nedostatcích. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Zjistíme zda jsme v technologické shodě</h3> -->
+      <!--       <p> -->
+      <!--         Pokud je váš systém postaven na webových technologiích -->
+      <!--         (JavaScript, TypeScript, Node, Nest, Express, React, Angular,...), -->
+      <!--         mohu pro vás udělat téměř cokoliv. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Určíme cíl</h3> -->
+      <!--       <p> -->
+      <!--         Potřebujete se zbavit chyb nebo udělat malé úpravy? Chcete z -->
+      <!--         prototypu udělat plnohodnotný software? Nebo se pustíme do -->
+      <!--         dlouhodobé spolupráce a dostaneme váš projekt na novou úroveň? -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Nastavíme strategii</h3> -->
+      <!--       <p>Vzhledem k vašim požadavkům naplánujeme postup implementace.</p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Pustíme se do práce</h3> -->
+      <!--       <p> -->
+      <!--         Ať už to bude spolupráce na pár dní nebo měsíce, budeme stále v -->
+      <!--         úzkém kontaktu a na vývoji projektu pracovat společně. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Vaše webová aplikace hladce běží</h3> -->
+      <!--       <p> -->
+      <!--         Pokud jsme se dohodli na dlouhodobé spolupráci, zajistím podporu a -->
+      <!--         údržbu. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--   </ol> -->
+      <!-- </section> -->
+      <!-- <section class="section blur" id="realization-section"> -->
+      <!--   <h2>Jak zrealizujeme vaši vizi</h2> -->
+      <!--   <ol> -->
+      <!--     <li> -->
+      <!--       <h3>Povíte mi o své motivaci</h3> -->
+      <!--       <p> -->
+      <!--         Máte problém, který chcete vyřešit pomocí software. O co se jedná -->
+      <!--         a řešíte tento problém už nějak? -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Podíváme se na váš ekosystém</h3> -->
+      <!--       <p> -->
+      <!--         Stojí vaše firma na celé škále aplikací a systémů? Nebo začínáme -->
+      <!--         na zelené louce? Jak do toho zapadá vaše vize? -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Existuje už řešení</h3> -->
+      <!--       <p> -->
+      <!--         Je docela možné, že pro váš problém již existuje specializovaný -->
+      <!--         software. Pokud ano, zhodnotíme, zda by se spíš nevyplatilo použít -->
+      <!--         hotové tzv. "krabicové" řešení. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Definujeme prototyp</h3> -->
+      <!--       <p> -->
+      <!--         Vývoj softwaru je veliká investice. Je dobré nejdříve vyrobit -->
+      <!--         levný prototyp, díky kterému si potvrdíme nebo vyvrátíme některé -->
+      <!--         předpoklady. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Pustíme se do vývoje</h3> -->
+      <!--       <p> -->
+      <!--         Začínáme od nuly a vyvíjíme tzv. MVP, tedy prvotní verzi produktu, -->
+      <!--         která obsahuje minimální potřebné vlastnosti. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--     <li> -->
+      <!--       <h3>Stavíme úspěšný projekt</h3> -->
+      <!--       <p> -->
+      <!--         Software žije a vydělává tak dlouho, jak dlouho ho vyvíjíme. Vývoj -->
+      <!--         znamená změny. Proto po celou dobu trvání naší spolupráce dodávám -->
+      <!--         kvalitní, udržitelný a moderní kód. Poskytuji podporu a kompletně -->
+      <!--         zajišťuji váš projekt. -->
+      <!--       </p> -->
+      <!--     </li> -->
+      <!--   </ol> -->
+      <!-- </section> -->
+      <section class="section blur" id="testimonies-section">
+        <h2>Reference</h2>
+        <div>
+          <blockquote cite="https://bntlab.com/">
+            Ve společnosti B&T se zaměřujeme na efektivitu a snažíme se zbavit
+            administrativní zátěže. Automatizace procesů, které Jakub vyvinul,
+            nám pomohly uvolnit čas našich zaměstnanců, který nyní mohou věnovat
+            úkolům s vyšší přidanou hodnotou.
+          </blockquote>
+          <p class="cite">
+            —Jevgenij Blagonravov, Founder & Innovation Director, B&T lab
+          </p>
+        </div>
+        <div>
+          <blockquote cite="https://bntlab.com/">
+            Pracovat s Jakubem na automatizaci interních procesů byla radost!
+            Nejenže jsme vyřešili naše palčivé téma, ale potvrdilo se, že si
+            Jakub umí poradit se vším, co mu přijde pod ruky, vynalézavým,
+            jednoduchým a efektivním způsobem.
+          </blockquote>
+          <p class="cite">—Hana Opatrná, Back Office manažerka, B&T Agency</p>
+        </div>
+      </section>
+      <section class="section" id="case-studies-section">
+        <h2>Případové studie</h2>
+        <div class="case-study-list">
+          <a href="static/bnt_study.pdf">
+            <div class="case-study-thumbnail">
+              <img
+                src="static/bnt_study_thumbnail.jpg"
+                alt="case study thumbnail"
+              />
+              <div class="overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="300px"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="static/profitandroll_study.pdf">
-          <div class="case-study-thumbnail">
-            <img src="static/profitandroll_study_thumbnail.png" alt="case study thumbnail" />
-            <div class="overlay">
-              <svg viewBox="0 0 24 24" width="300px" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
-                    stroke="var(--light-opaque)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="var(--light-opaque)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>
+          </a>
+          <a href="static/profitandroll_study.pdf">
+            <div class="case-study-thumbnail">
+              <img
+                src="static/profitandroll_study_thumbnail.png"
+                alt="case study thumbnail"
+              />
+              <div class="overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="300px"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="static/cez_study.pdf">
-          <div class="case-study-thumbnail">
-            <img src="static/cez_study_thumbnail.jpg" alt="case study thumbnail" />
-            <div class="overlay">
-              <svg viewBox="0 0 24 24" width="300px" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
-                    stroke="var(--light-opaque)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="var(--light-opaque)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>
+          </a>
+          <a href="static/cez_study.pdf">
+            <div class="case-study-thumbnail">
+              <img
+                src="static/cez_study_thumbnail.jpg"
+                alt="case study thumbnail"
+              />
+              <div class="overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="300px"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="static/betsys_case_study.pdf">
-          <div class="case-study-thumbnail">
-            <img src="static/betsys_case_study_thumbnail.jpg" alt="case study thumbnail" />
-            <div class="overlay">
-              <svg viewBox="0 0 24 24" width="300px" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
-                    stroke="var(--light-opaque)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="var(--light-opaque)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>
+          </a>
+          <a href="static/betsys_case_study.pdf">
+            <div class="case-study-thumbnail">
+              <img
+                src="static/betsys_case_study_thumbnail.jpg"
+                alt="case study thumbnail"
+              />
+              <div class="overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="300px"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="static/splash_case_study.pdf">
-          <div class="case-study-thumbnail">
-            <img src="static/splash_case_study_thumbnail.jpg" alt="case study thumbnail" />
-            <div class="overlay">
-              <svg viewBox="0 0 24 24" width="300px" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
-                    stroke="var(--light-opaque)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="var(--light-opaque)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </g>
-              </svg>
+          </a>
+          <a href="static/splash_case_study.pdf">
+            <div class="case-study-thumbnail">
+              <img
+                src="static/splash_case_study_thumbnail.jpg"
+                alt="case study thumbnail"
+              />
+              <div class="overlay">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="300px"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5"
+                      stroke="var(--light-opaque)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <ul class="contacts blur">
-      <li><a href="mailto:jakub@stiburek.dev">
-          <div>jakub@stiburek.dev</div>
-        </a></li>
-      <li><a href="tel:+420774234824">774 234 824</a></li>
-      <li><a href="https://rejstrik-firem.kurzy.cz/zivnostnik/Z2uaqJaZlao=">IČ 03952347</a></li>
-      <li><a href="https://www.linkedin.com/in/jakubstiburekdev/">
-          <div>LinkedIn</div>
-        </a>
-      </li>
-    </ul>
-    <a href="#header">zpět nahoru</a>
-  </footer>
-</body>
-
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="contacts blur">
+        <li>
+          <a href="mailto:jakub@stiburek.dev">
+            <div>jakub@stiburek.dev</div>
+          </a>
+        </li>
+        <li><a href="tel:+420774234824">774 234 824</a></li>
+        <li>
+          <a href="https://rejstrik-firem.kurzy.cz/zivnostnik/Z2uaqJaZlao="
+            >IČ 03952347</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jakubstiburekdev/">
+            <div>LinkedIn</div>
+          </a>
+        </li>
+      </ul>
+      <a href="#header">zpět nahoru</a>
+    </footer>
+  </body>
 </html>
